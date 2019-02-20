@@ -1,10 +1,9 @@
 FROM phusion/baseimage:0.9.19
-MAINTAINER BirgerK <birger.kamp@gmail.com>
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV LETSENCRYPT_HOME /etc/letsencrypt
-ENV DOMAINS "meljuiceportal.net"
-ENV WEBMASTER_MAIL "gary.daigle@gmail.com"
+ENV DOMAINS "example.com"
+ENV WEBMASTER_MAIL "user@example.com"
 
 # Manually set the apache environment variables in order to get apache to work immediately.
 RUN echo $WEBMASTER_MAIL > /etc/container_environment/WEBMASTER_MAIL && \
